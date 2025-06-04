@@ -74,7 +74,7 @@ header a:hover {
 }
 
 #conteudo {
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
 
