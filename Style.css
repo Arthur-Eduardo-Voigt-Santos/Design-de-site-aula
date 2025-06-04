@@ -75,6 +75,7 @@ header a:hover {
 
 #conteudo {
     display: flex;
+    margin: 0 auto;
 }
 
 .img_titulo {
