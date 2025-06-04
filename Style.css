@@ -42,7 +42,7 @@ header a {
     justify-content: center;/*Centraliza o componente na horizontal, só funciona se o display estiver como flex*/
 }
 
-/*estilo que afeta os componentes <a> que estão entre <header> e </header>, quando o mouse passa por cima.*/
+/*estilo que afeta os componentes <a> que estão entre <header> e </header>, quando o mouse passa por cima(:hover).*/
 header a:hover {
     height: 60px;
     width: 100px;
