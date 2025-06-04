@@ -1,0 +1,156 @@
+/*como podem ver, vocês podem usar o simbolo barra e asterisco para colocar comentarios no código CSS. Conforme for apresentando um novo comando, ao lado dele haverá um comentario explicando resumidamente para o que ele é utilizado.*/
+
+/*Como vocês devem ter visto no html, existe o componente id e class, que são classificações que o elemento recebi, eles são uteis para pode separar os elementos para assim eles poderem receber o estilo corretamente. O id usamos normalmente em componentes unicos, por exemplo: texto 1; texto 2; ect. já o class usamos para determina um estilo que vai ser usado em varios componentes no html.*/
+
+/*estilo que vai atingir todo os componentes do código html*/
+html {
+    scroll-behavior: smooth; /*Deixa a rolagem do site mais suavizada, coloquei como style do html para afetar todo o site*/
+}
+
+/*estilo que afeta todos os componentes que estão entre <body> e </body>.*/
+body {
+    background-color: black; /*Define uma cor de fundo de um componente, nesse caso o corpo do site, que é toda a parte visível*/
+}
+
+/*estilo que afeta todos os componentes que estão entre <header> e </header>.*/
+header {
+    position: fixed;/*altera o tipo de posicionamento do componente*/
+    top: 0;/*altera a distância do elemento do topo do site*/
+    left: 0;/*altera a distância do elemento da esqueda do site*/
+    width: 98%;/*largura do componente*/
+    z-index: 1000; /*garante que fique acima de outros elementos*/
+    background-color: black;
+    display: flex;/*a propriedade display é responsável por definir como um elemento HTML é exibido na tela*/
+    margin-bottom: 10px;/*Sempre que tiver margin, padding ou border aqui no css, o que está sendo alterado é um componente que fica envolta dos elementos do html, o border é o que fica envolta do elemento normal, o padding fica envolta do border, e a margin fica envolta do padding*/
+    padding: 10px 10px;
+    border: 1px solid white; /*Altera o tamanho da borda(1px), especifica o tipo de linha da borde(solid), e diz qual é a cor da borda(White)*/
+}
+
+/*estilo que afeta os componentes <a> que estão entre <header> e </header>.*/
+header a {
+    height: 100px;/*altura do componente*/
+    width: 100px;
+    margin-inline: 20px;    
+    padding-inline: 20px;
+    color: white;/*cor do componente, normalmente usado para definir a cor de algo que está dentro do componente, como um texto por exemplo*/
+    font-family: 'andalus', serif;/*defini a fonte do componente e a fonte da familia tipografica da fonte selecionada*/
+    font-size: 30px;/*tamanho da fonte*/
+    font-weight: bold;/*grossura da fonte*/
+    text-decoration: none;/*decoração da fonte, tipo o risco que fica embaico da letra, nesse caso eu estou selecionando nenhuma decoração(none)*/
+    display: flex;
+    align-items: center; /*Centraliza o componente na vertical, só funciona se o display estiver como flex*/
+    justify-content: center;/*Centraliza o componente na horizontal, só funciona se o display estiver como flex*/
+}
+
+/*estilo que afeta os componentes <a> que estão entre <header> e </header>, quando o mouse passa por cima.*/
+header a:hover {
+    height: 60px;
+    width: 100px;
+    padding-block: 20px;
+    background-color: rgb(27, 27, 27);
+}
+
+/*estilo que afeta os componentes que possuem o id com nome de: botoesmenu*/
+#botoesmenu {
+    display: flex;
+    position:absolute;
+    left: 25%;
+    right: 50%;
+}
+
+/*estilo que afeta os componentes que possuem o class com nome de: trancado*/
+.trancado {
+    color: rgb(151, 63, 63);
+    text-decoration: line-through;/*a linha embaixo da letra que eu tinha falado*/
+}
+
+/*estilo que afeta os componentes que possuem o id com nome de: menuconfig, bem acho que vocês entenderam o pra que server o (#) e o (.) antes de uma palavra aqui no CSS.*/
+#menuconfig {
+    margin-left: auto;
+}
+
+.main_div {
+    margin-top: 140px;
+}
+
+#conteudo {
+    display: flex;
+}
+
+.img_titulo {
+    margin-inline: 20px;
+    height: 150px;
+}
+
+.titulo {
+    margin-block: 0px;
+    margin-inline: 200px;
+    color: white;
+    font-family: 'andalus', serif;
+    font-size: 100px;
+    text-align: center; /*centraliza o texto no meio do componente*/
+}
+
+.secao {
+    padding: 10px;
+    margin: 20px auto;
+    margin-inline: 20px;
+}
+
+.texto {
+    margin-block: 12px;
+    color: white;
+    font-family: 'andalus', serif;
+    font-size: 30px;
+    line-height: 1.5;
+    text-indent: 5%;/*distância adicional da primeira linha do paragráfo*/
+    text-align: justify;
+}
+
+.titulo_pergunta{
+    color: white;
+    font-size: 50px;
+    font-family: 'andalus', serif;
+}
+
+.subtitulo_pergunta{
+    color: white;
+    font-size: 35px;
+    font-family: 'andalus', serif;
+}
+
+.barra {
+    height: 60px;
+    width: 1280;
+}
+
+.siteexemplo {
+    color: rgb(255, 119, 119);
+    font-family: 'andalus', serif;
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#poca1 {
+    background-image: url('Imagens/Pocasangue1.png');
+    height: 300px;
+    width: 1342px;
+    background-repeat: repeat-x;/*repeat a imagem de fundo para a direção informada, nesse caso no eixo x que é na horizontal*/
+    background-position: center;
+    background-size: auto;
+}
+
+/*estilo que afeta todos os elementos que estão entre <footer> e </footer>.*/
+footer {
+      background-color: black;
+      display: flex;
+      color: #fff;
+      text-align: center;
+      justify-content: center;
+      font-family: 'andalus', serif;
+      font-size: 20px;
+      margin-top: 20px;
+      border: 1px solid;
+    }

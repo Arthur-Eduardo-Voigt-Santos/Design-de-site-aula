@@ -1,0 +1,98 @@
+<!--No Html podemos colocar comentários que não afetam o código utilizando essa combinação de simbolos que estão no começo e no final do comentário.-->
+<!DOCTYPE html><!--Tag que informa qual é a versão do html-->
+<html lang="pt-br"><!--Especifica qual é a linguagem o site possui-->
+<head><!--Head é o local onde é armazenado as configurações essenciais do site. Nada aqui aparece no site visualmente, apenas o title, que é o titulo do site.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de Site</title><!--Titulo que aparece na aba do site-->
+    <link rel="stylesheet" href="Style.css"><!--Estou chamando o arquivo Css-->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet"><!--Estou chamando uma fontede letra especifica que eu queria usar no site-->
+</head>
+<body><!--Agora sim, no body fica todo componente visivel do site.-->
+    <header><!--Parte de cima do site, normalmente onde fica aquela barra de menu e logo do site-->
+        <img src="Imagens/Simbolo_Colégio_Paulo_.png" style="height: 100px;"><!--logo do colégio, coloquei porque achei legal :D. E o comando src="..." serve como para procurar a imagem que eu quero nas pastas do site-->
+        <nav id="botoesmenu"><!--Nav é uma tag que tem a mesma função de um div, a diferença é que ele é usado para os botões da barra de menu de um site, por questão de boas práticas, você poderia usar um div no lugar disso-->
+            <a href="#conteudo" class="liberado">Conteúdo</a><!--Aqui, estou colocando um link(<a>...</a>), para usa-lo como botão, mexendo no site vocês entendem para que esses botões servem.-->
+            <a href="#exemplos" class="liberado">Exemplos</a>
+            <a href="#atividade" class="liberado">Atividade</a>
+            <a href="#conta" class="liberado">Fim</a>
+        </nav>
+    </header>
+    <div class="main_div"><!--Div é um componente de divição, usamos ele para dividir as coisas no site, por exemplo tem uma parte do site onde fica alguns botões e outra que fica algumas imagens, você colcoa os bot~es e as imagens em divs separados para ser mais favil se localizar no código e para facilitar na hora de atribuir algum estilo com o css-->
+        <div id="conteudo"><!--Sim, você pode colocar <div> dentro de <div>-->
+            <img src="Imagens/esqueleto dançando 1.gif" class="img_titulo">
+            <h1 class="titulo">Design de Site</h1><!--<h1> é usado paraescrever titulos-->
+            <img src="Imagens/esqueleto dançando 2.gif" class="img_titulo">
+        </div>
+        <div class="secao">
+            <p class="texto">Olá alunos, para contextualizá-los, eu criei este site para lecionar o conteúdo de design de site para vocês, também vou usá-lo para ajudar vocês a relembrar sobre os conteúdos de html e css, já que será necessário o conhecimento sobre front-end de site para prosseguirmos com o conteúdo de design de site.</p><p class="texto">Então, antes de entrarmos no conteúdo de design de site, vamos dar uma leve relembrada em conceitos de front-end para prosseguirmos com o conceito de design de site. Mais especificamente, no conteúdo de html e css. Para isso vou pedir que cliquem com o botão direito do mouse em qualquer canto do site, em seguida selecionem a opções inspecionar, isso vai abrir a janela de inspeção.</p><!--<p> é usado para escrever textos comuns-->
+            <br><!--Pula para a proxima linha no texto, pode ser colocado dentro do <p> e pode ser usado para gerar um espacinho se colocado entre outros componentes-->
+            <img src="Imagens/Captura de tela 2025-06-02 193334.jpg" style="height: 500px; display: block; margin: 0 auto;"><!--O style ali é o estilo do componente, ou seja, a parte de CSS. Posso colocar assim ou em outro aruivo e chama-lo no head igual eu fiz la em cima-->
+            <img src="Imagens/Captura de tela 2025-06-02 193453.jpg" style="height: 500px; display: block; margin: 0 auto; margin-block: 20px;">
+            <br>
+            <p class="texto">Agora podemos observar o código HTML e CSS. Suponho que vocês possuem a noção de que: o HTML define a estrutura e os componentes que estarão presentes no site, enquanto o CSS é responsável por definir o estilo e a aparência visual desses componentes, como cores, fontes, espaçamento e layout. Assim, trabalhando juntos, HTML e CSS possibilitam a criação de páginas web completas, estruturadas e visualmente atraentes.</p><p class="texto">Enquanto a linguagem de marcação HTML funciona através de uma estrutura hierárquica construída com &lt;tags&gt;, a linguagem de estilo CSS não possui o objetivo de ter uma estrutura, apenas foca em definir parâmetros visuais desejados. Vocês podem observar isso na maneira que eu escrevi o código HTML e CSS deste site. Também deixei comentários no código para que vocês possam entender e relembrar o que cada componente faz.</p>
+            <img src="Imagens/Barra ponta triangular horizontal.png" class="barra">
+        </div>
+        <div id="poca1"></div>
+        <div class="secao">
+            <img src="Imagens/Barra ponta triangular horizontal com flor.png" class="barra">
+            <p class="texto">Bem, acredito que depois de uma lida no código do site vocês já tenham lembrado ou entendido mais ou menos como funciona essas duas linguagens para montar um site. Agora, vamos entender o que é o design de site. Podem fechar a janela de inspeção.</p>
+            <h1 class="titulo_pergunta" style="color: white;">O que é Design de Site?</h1>
+            <p class="texto">Quando falamos em design de site, estamos nos referindo à prática de planejar, criar e organizar visualmente uma página ou conjunto de páginas na internet. O objetivo é transformar a informação em algo agradável, acessível e funcional para o usuário final.</p><p class="texto">Um site bem projetado é aquele que não apenas apresenta informações, mas faz isso de forma clara, organizada e intuitiva. Imagine que você entra em um site e não consegue achar o menu, não entende onde clicar ou fica perdido entre textos desorganizados. <span style="color: yellow;">Isso é um problema de design</span>, e é aí que entra a computação gráfica, que fornece as ferramentas para criar elementos visuais que facilitam a navegação e melhoram a experiência do usuário.</p>
+            <h1 class="titulo_pergunta" style="color: white;">Elementos principais do design de site</h1>
+            <h2 class="subtitulo_pergunta" style="color: white;">1. Layout</h2>
+            <p class="texto">O layout é a forma como os elementos são distribuídos na página: onde vão os textos, as imagens, os menus e os botões. Um bom layout facilita a leitura e ajuda o usuário a encontrar rapidamente o que precisa.
+            Exemplo: uma página inicial geralmente tem uma estrutura com cabeçalho (header), corpo principal (main) e rodapé (footer). Dentro do corpo principal, podemos ter seções de destaque, notícias recentes, área de contato, etc.</p>
+            <h2 class="subtitulo_pergunta" style="color: white;">2. Cores e Tipografia</h2>
+            <p class="texto">As cores transmitem sensações (tranquilidade, urgência, diversão) e ajudam a criar uma identidade visual. Por exemplo, cores claras podem dar leveza, enquanto cores fortes podem chamar a atenção para algo importante. A tipografia é a escolha de fontes e tamanhos de texto. É essencial que os textos sejam legíveis, tanto em computadores quanto em celulares.</p>
+            <h2 class="subtitulo_pergunta" style="color: white;">3. Imagens e Ícones</h2>
+            <p class="texto">Imagens, ilustrações e ícones tornam o site mais atraente e ajudam a transmitir informações de forma visual. Em computação gráfica, trabalhamos a edição dessas imagens para que fiquem adequadas à proposta do site e sejam otimizadas para a web (ou seja, que carreguem rápido).</p>
+            <h2 class="subtitulo_pergunta" style="color: white;">4. Navegação</h2>
+            <p class="texto">Um site precisa ser fácil de usar. Isso significa ter menus e links claros, que levem o usuário de forma intuitiva de uma seção a outra. A navegação pode ser horizontal (menu no topo) ou vertical (menu na lateral), dependendo do projeto.</p>
+            <h2 class="subtitulo_pergunta" style="color: white;">5. Responsividade</h2>
+            <p class="texto">Hoje em dia, muita gente acessa a internet pelo celular ou tablet. Por isso, o design de site deve ser responsivo, ou seja, deve se adaptar a diferentes tamanhos de tela, mantendo a usabilidade.</p>
+            <img src="Imagens/Barra ponta triangular horizontal.png" class="barra">
+        </div>
+        <img src="Imagens/Pocasangue2.png" style="height: 300px; display: block; margin: 0 auto;">
+        <div id="exemplos" class="secao">
+            <img src="Imagens/Barra ponta triangular horizontal.png" class="barra">
+            <h1 class="titulo">Exemplos de design de site</h1>
+            <p class="texto">Bem, acredito que seja bom também dar alguns exemplos de aplicação de design de site para vocês. Aqui temos alguns exemplos:</p>
+
+            <h1 class="subtitulo_pergunta">Design simples e de uso geral</h1>
+            <p class="texto">O primeiro exemplo é um design de site simples e que qualquer instituição pode usar. É um design que não é muito chamativo, mas apresenta os pontos principais que um site deve ter, apresenta a instituição com a logo e um banner com um texto introdutorio, e com uma simples rolagem o usuário tem acesso ao serviços que o site oferece.</p>
+            <img src="Imagens/Site1Exemplo.jpg" style="height: 500px; display: block; margin: 0 auto;">
+            <a class="siteexemplo" href="Sites de exemplo/Site_exemplo_1.html">Clique aqui para dar uma olhada neste site.</a>
+
+            <h1 class="subtitulo_pergunta">Design gamer</h1>
+            <p class="texto">O segundo exemplo já é um design mais especifico, que foca em chamar atenção de um público especifico, nesse caso o público jovem e gamer. Isso claro, se deve pelo uso de cores mais vibrantes e luminesentes e de um fundo preto, que é associado com a estetica gamer atual. Também é um site de venda, exibindo suas promoções como banner e logo em seguida alguns de seus produtos.</p>
+            <img src="Imagens/Site2Exemplo1.jpg" style="height: 500px; display: block; margin: 0 auto;">
+            <img src="Imagens/Site2Exemplo2.jpg" style="height: 500px; display: block; margin: 0 auto; margin-top: 20px;">
+            <a class="siteexemplo" href="Sites de exemplo/Site_exemplo_2.html">Clique aqui para dar uma olhada neste site.</a>
+
+            <h1 class="subtitulo_pergunta">Design hospital</h1>
+            <p class="texto">O terceiro e ultimo exemplo, assim como o segundo, buscou um público específico para cronstruir o design do site. Neste caso o público alvo são pessoas que precisão de ajuda médica, pode se observar que o site trás um ar agradavél e aconchegante, isso por causa das duas simples cores usadas(verde e branco), e por não trazer muito informação na pagina informação na tela. Sendo perfeito para uma leitura calma para absorver melhor as informações.</p>
+            <img src="Imagens/Site3Exemplo1.jpg" style="height: 500px; display: block; margin: 0 auto;">
+            <img src="Imagens/Site3Exemplo2.jpg" style="height: 500px; display: block; margin: 0 auto; margin-top: 20px;">
+            <a class="siteexemplo" href="Sites de exemplo/Site_exemplo_3.html">Clique aqui para dar uma olhada neste site.</a>
+            <img src="Imagens/Barra ponta triangular horizontal.png" class="barra">
+        </div>
+        <img src="Imagens/Pocasangue2.png" style="height: 300px; display: block; margin: 0 auto;">
+        <div id="atividade" class="secao">
+            <img src="Imagens/Barra ponta triangular horizontal com flor.png">
+            <h1 class="titulo">Atividade</h1>
+            <p class="texto">A atividade deste conteúdo é bem simples, quero que vocês escolham qualquer site(de qualquer instituição ou empresa), e me enviem o link deste site para mim no classroom, junto ao link, vocês vão me dizer o que, para você, o design do site transmiti, e o que você acredita que ele queria transmitir. Vocês podem mandar o texto no comentario particular da atividade, ou como um arquivo de texto ou foto anexado na atividade.</p>
+        </div>
+        <div id="conta" class="secao">
+            <br><br><br>
+            <img src="Imagens/Gatovampiromoment.png" style="height: 500px; display: block; margin: 0 auto;">
+            <br><br><br>
+            <p class="titulo">Fim.</p>
+        </div>
+    </div>
+    <footer><!--por fim, o footer é a parte de baixo do site, normalmente onde fica algumas opções extras ou o copyright-->
+    <p>&copy; 2025 Made in Acre. Site aula elaborado pelo professor de computação gráfica Arthur Eduardo voigt santos.</p>
+    <img src="Imagens/Cranio.png" style="position: absolute; height: 60px; display: flex; margin-left: 90%; margin-top: 5px;">
+    </footer>
+</body>
+</html>

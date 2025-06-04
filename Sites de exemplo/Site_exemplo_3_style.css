@@ -1,0 +1,111 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e9900;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    .banner {
+      background-color: #e9ecef;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .banner .imagem-banner {
+      width: 100%;
+      height: 400px;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #666;
+      font-size: 20px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2e9900;
+    }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .servico {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .servico .imagem-servico {
+      width: 100%;
+      height: 150px;
+      background-color: #ccc;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #666;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #2e9900;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    #voltar {
+      position: fixed; /* fixa na tela, independente da rolagem */
+      top: 20px;       /* distância do topo */
+      left: 20px;      /* distância da esquerda */
+      z-index: 9999;   /* garante que fica acima dos outros elementos */
+      margin-top: 60px;
+      height: 50px;
+      width: 100px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Andalus', serif;
+      font-size: 30px;
+    }
+
+    #voltar:hover {
+      background-color: rgb(75, 75, 75);
+    }
