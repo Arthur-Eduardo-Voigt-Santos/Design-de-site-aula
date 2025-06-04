@@ -122,9 +122,8 @@ header a:hover {
 .barra {
     height: 60px;
     width: 1280px;
-    display: flex;
-    justify-content: center;
-    margin-inline: auto;
+    display: block; 
+    margin: 0 auto;
 }
 
 .siteexemplo {
