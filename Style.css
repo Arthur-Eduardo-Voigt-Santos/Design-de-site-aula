@@ -54,8 +54,10 @@ header a:hover {
 #botoesmenu {
     display: flex;
     position:absolute;
-    left: 25%;
-    right: 50%;
+    align-items: center;
+    justify-content: center;
+    /*left: 25%;
+    right: 50%;*/
 }
 
 /*estilo que afeta os componentes que possuem o class com nome de: trancado*/
