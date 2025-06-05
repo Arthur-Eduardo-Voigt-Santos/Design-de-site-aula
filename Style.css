@@ -17,19 +17,36 @@ header {
     position: fixed;/*altera o tipo de posicionamento do componente*/
     top: 0;/*altera a distância do elemento do topo do site*/
     left: 0;/*altera a distância do elemento da esqueda do site*/
-    width: 98%;/*largura do componente*/
-    z-index: 1000; /*garante que fique acima de outros elementos*/
+    width: 98.4%;/*largura do componente*/
+    z-index: 100; /*garante que fique acima de outros elementos*/
     background-color: black;
     display: flex;/*a propriedade display é responsável por definir como um elemento HTML é exibido na tela*/
+    align-items: center; /*Centraliza o componente na vertical, só funciona se o display estiver como flex*/
+    justify-content: center;/*Centraliza o componente na horizontal, só funciona se o display estiver como flex*/
     margin-bottom: 10px;/*Sempre que tiver margin, padding ou border aqui no css, o que está sendo alterado é um componente que fica envolta dos elementos do html, o border é o que fica envolta do elemento normal, o padding fica envolta do border, e a margin fica envolta do padding*/
     padding: 10px 10px;
     border: 1px solid white; /*Altera o tamanho da borda(1px), especifica o tipo de linha da borde(solid), e diz qual é a cor da borda(White)*/
 }
 
-/*estilo que afeta os componentes <a> que estão entre <header> e </header>.*/
-header a {
+header img {
+    height: 100px;
+    display: block;
+    position: absolute;
+    left: 10px; /* empurra a imagem para a esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav {
+    display: flex;/*a propriedade display é responsável por definir como um elemento HTML é exibido na tela*/
+    align-items: center; /*Centraliza o componente na vertical, só funciona se o display estiver como flex*/
+    justify-content: center;/*Centraliza o componente na horizontal, só funciona se o display estiver como flex*/
+}
+
+nav a {
     height: 100px;/*altura do componente*/
     width: 100px;
+    margin: 0 auto;
     margin-inline: 20px;    
     padding-inline: 20px;
     color: white;/*cor do componente, normalmente usado para definir a cor de algo que está dentro do componente, como um texto por exemplo*/
@@ -42,21 +59,12 @@ header a {
     justify-content: center;/*Centraliza o componente na horizontal, só funciona se o display estiver como flex*/
 }
 
-/*estilo que afeta os componentes <a> que estão entre <header> e </header>, quando o mouse passa por cima(:hover).*/
-header a:hover {
+/*estilo que afeta os componentes <a> que estão entre <nav> e </nav>, quando o mouse passa por cima(:hover).*/
+nav a:hover {
     height: 60px;
     width: 100px;
     padding-block: 20px;
     background-color: rgb(27, 27, 27);
-}
-
-/*estilo que afeta os componentes que possuem o id com nome de: botoesmenu*/
-#botoesmenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*left: 25%;
-    right: 50%;*/
 }
 
 /*estilo que afeta os componentes que possuem o class com nome de: trancado*/
@@ -65,19 +73,18 @@ header a:hover {
     text-decoration: line-through;/*a linha embaixo da letra que eu tinha falado*/
 }
 
-/*estilo que afeta os componentes que possuem o id com nome de: menuconfig, bem acho que vocês entenderam o pra que server o (#) e o (.) antes de uma palavra aqui no CSS.*/
-#menuconfig {
-    margin-left: auto;
-}
-
 .main_div {
     margin-top: 140px;
+}
+
+#main_div {
+    scroll-margin-top: 140px;
 }
 
 #conteudo {
     display: flex;
     margin: 0 auto;
-    /*oi :D*/
+    scroll-margin-top: 140px;
 }
 
 .img_titulo_1 {
@@ -103,6 +110,7 @@ header a:hover {
     padding: 10px;
     margin: 20px auto;
     margin-inline: 20px;
+    scroll-margin-top: 110px;
 }
 
 .texto {
