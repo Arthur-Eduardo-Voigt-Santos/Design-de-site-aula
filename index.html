@@ -10,15 +10,17 @@
 </head>
 <body><!--Agora sim, no body fica todo componente visivel do site.-->
     <header><!--Parte de cima do site, normalmente onde fica aquela barra de menu e logo do site-->
-        <img src="Imagens/Simbolo_Colégio_Paulo_.png" style="height: 100px;"><!--logo do colégio, coloquei porque achei legal :D. E o comando src="..." serve como para procurar a imagem que eu quero nas pastas do site-->
-        <nav id="botoesmenu"><!--Nav é uma tag que tem a mesma função de um div, a diferença é que ele é usado para os botões da barra de menu de um site, por questão de boas práticas, você poderia usar um div no lugar disso-->
+        <a>
+            <img src="Imagens/Simbolo_Colégio_Paulo_.png"><!--logo do colégio, coloquei porque achei legal :D. E o comando src="..." serve como para procurar a imagem que eu quero nas pastas do site-->
+        </a>
+        <nav><!--Nav é uma tag que tem a mesma função de um div, a diferença é que ele é usado para os botões da barra de menu de um site, por questão de boas práticas, você poderia usar um div no lugar disso-->
             <a href="#conteudo" class="liberado">Conteúdo</a><!--Aqui, estou colocando um link(<a>...</a>), para usa-lo como botão, mexendo no site vocês entendem para que esses botões servem.-->
             <a href="#exemplos" class="liberado">Exemplos</a>
             <a href="#atividade" class="liberado">Atividade</a>
-            <a href="#conta" class="liberado">Fim</a>
+            <a href="#footer" class="liberado">Fim</a>
         </nav>
     </header>
-    <div class="main_div"><!--Div é um componente de divição, usamos ele para dividir as coisas no site, por exemplo tem uma parte do site onde fica alguns botões e outra que fica algumas imagens, você colcoa os bot~es e as imagens em divs separados para ser mais favil se localizar no código e para facilitar na hora de atribuir algum estilo com o css-->
+    <div class="main_div" id="main_div"><!--Div é um componente de divição, usamos ele para dividir as coisas no site, por exemplo tem uma parte do site onde fica alguns botões e outra que fica algumas imagens, você colcoa os bot~es e as imagens em divs separados para ser mais favil se localizar no código e para facilitar na hora de atribuir algum estilo com o css-->
         <div id="conteudo"><!--Sim, você pode colocar <div> dentro de <div>-->
             <img src="Imagens/esqueleto dançando 1.gif" class="img_titulo_1">
             <h1 class="titulo">Design de Site</h1><!--<h1> é usado paraescrever titulos-->
@@ -83,16 +85,19 @@
             <h1 class="titulo">Atividade</h1>
             <p class="texto">A atividade deste conteúdo é bem simples, quero que vocês escolham qualquer site(de qualquer instituição ou empresa), e me enviem o link deste site para mim no classroom, junto ao link, vocês vão me dizer o que, para você, o design do site transmiti, e o que você acredita que ele queria transmitir. Vocês podem mandar o texto no comentario particular da atividade, ou como um arquivo de texto ou foto anexado na atividade.</p>
         </div>
-        <div id="conta" class="secao">
+        <div class="secao">
             <br><br><br>
             <img src="Imagens/Gatovampiromoment.png" style="height: 500px; display: block; margin: 0 auto;">
             <br><br><br>
             <p class="titulo">Fim.</p>
         </div>
     </div>
-    <footer><!--por fim, o footer é a parte de baixo do site, normalmente onde fica algumas opções extras ou o copyright-->
-    <p>&copy; 2025 Made in Acre. Site aula elaborado pelo professor de computação gráfica Arthur Eduardo voigt santos.</p>
-    <img src="Imagens/Cranio.png" style="position: absolute; height: 60px; display: flex; margin-left: 90%; margin-top: 5px;">
+    <footer id="footer"><!--por fim, o footer é a parte de baixo do site, normalmente onde fica algumas opções extras ou o copyright-->
+        <a href="#main_div" style="position: absolute; height: 60px; display: flex; margin-right: 93%; margin-top: 5px;">
+            <img src="Imagens/Cranio.png">
+        </a>
+        <p>&copy; 2025 Made in Acre. Site aula elaborado pelo professor de computação gráfica Arthur Eduardo voigt santos.</p>
+        <img src="Imagens/Cranio.png" style="position: absolute; height: 60px; display: flex; margin-left: 93%; margin-top: 5px;">
     </footer>
 </body>
 </html>
