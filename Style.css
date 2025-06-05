@@ -53,7 +53,6 @@ header a:hover {
 /*estilo que afeta os componentes que possuem o id com nome de: botoesmenu*/
 #botoesmenu {
     display: flex;
-    position:absolute;
     align-items: center;
     justify-content: center;
     /*left: 25%;
